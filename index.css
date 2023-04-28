@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    max-width: 1440px;
+}
+
+body{
+    background-image: url('images/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+}
+
+/*Utilities*/
+.btn-large{
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 40px;
+    color: hsl(13, 100%, 96%);
+    box-shadow: 5px 3px 10px rgb(238, 52, 27, 0.5);
+    padding: 10px 30px;
+    border: none;
+
+}
+
+.btn-light{
+    background-color: hsl(13, 100%, 96%);
+    color: hsl(12, 88%, 59%);
+    font-weight: 400;
+}
+
+.container-fluid{
+    width: 90%
+
+}
+
+button:hover, input:hover{
+    cursor: pointer;
+}
+
+h1, h5, h4{
+    color: hsl(228, 39%, 23%);
+    font-weight: 700;
+}
+
+p{
+    color:hsl(227, 12%, 61%);
+    line-height: 1.5;
+    margin: 15px auto 40px;
+}
+
+/*Navbar*/
+
+
+nav{
+    margin: 50px auto;
+}
+
+nav ul{
+    text-align: center;
+    margin-left: 100px;
+}
+
+nav li .nav-link{
+    color: hsl(228, 39%, 23%);
+    font-weight: bold;
+   
+}
+
+li .nav-link:hover{
+    color: hsl(227, 12%, 61%);
+    cursor: pointer;
+}
+
+.navbar-toggler{
+    border: solid;
+}
+
+#tablet-absolute{
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+    top: -100px;
+    width: 50%;
+}
+
+/*features div*/
+.showcase .container-fluid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    margin: 100px auto;
+
+}
+
+/*difference of Manage*/
+#difference .container-fluid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    margin: 100px auto;
+}
+
+.rw-content{
+    display: flex;
+    text-align: justify;
+    gap: 30px;
+}
+
+#number{
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 30px;
+    padding: 5px 20px;
+    color:hsl(13, 100%, 96%);
+    height: 30%;
+    text-align: left;
+    margin: 0px auto;
+
+}
+
+/*Testimonial*/
+#testimonial{
+    margin: 100px auto 150px;
+    text-align: center;
+    z-index: -1;
+
+}
+
+
+.testimonial1{
+    background-color: hsl(0, 0%, 98%);
+    position: relative;
+    padding:20px 10px 0px;
+
+}
+
+
+#carouselExampleControlsNoTouching{
+    margin: 70px auto;
+    position: relative;
+
+
+}
+
+
+.testimonial1 img{
+    margin: 30px auto;
+}
+
+@media screen and (min-width:567px) {
+    .carousel-inner{
+        display: flex;
+        position: relative;
+    }
+
+    .carousel-item{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3)
+    }
+
+}
+
+.carousel-item{
+    margin: auto 20px;
+    text-align: center;
+}
+
+/*abover footer*/
+.above-footer{
+    background-color: hsl(12, 88%, 59%);
+}
+
+.above-footer .container-fluid{
+    padding: 60px 0 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    color: hsl(13, 100%, 96%);
+}
+
+/*Footer*/
+.footer{
+    background-color: hsl(233, 12%, 13%);
+    
+}
+
+.footer .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 60px 0;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+.social-link{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: hsl(13, 100%, 96%);
+    margin: 25px 15px;
+    padding: 30px;
+}
+
+.footer .col-1{
+    display: block;
+
+}
+
+
+.col-2{
+    display: flex;
+    width: 40%;
+}
+
+.footer .col-4{
+    text-align: right;
+}
+.footer input{
+    width: 250px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.footer button{
+    width: 70px;
+    padding: 7px;
+    box-shadow: none;
+    margin-bottom: 20px;
+
+
+}
+
+/*Media-query*/
+@media (max-width: 567px) {
+    .showcase .container-fluid{
+        display: block;
+        position: relative;
+        text-align: center;
+    
+    }
+
+    .chart-pictures{
+        position: absolute;
+        top: -300px;
+    }
+    .chart-pictures img{
+        width: 90%;
+
+    }
+
+    .content{
+        margin-top: 300px;
+    }
+
+    #difference .container-fluid{
+        display: block;
+        text-align: center;
+    }
+
+    .rw-content{
+        text-align: justify;
+        gap: 2px;
+    }
+
+    #number{
+        float: left;
+    }
+
+    .rw3-1{
+        float: right;
+    }
+
+    .above-footer .container-fluid{
+        display: block;
+        text-align: center;
+    }
+
+    .footer .container-fluid{
+        display: block;
+        text-align: center;
+        width: 100%;
+        position: relative;
+      
+    }
+
+    .footer .col-4{
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 20px;
+    }
+
+    .footer .col-1{
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .footer .col-2{
+        margin: 70px 0 50px;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .footer input, .footer button{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .social-link li a img{
+        text-align: center;
+        margin: auto 100%;
+        width: 90%;
+    }
+}
+
+/*Attribution*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
